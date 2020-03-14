@@ -10,18 +10,18 @@
 </head>
 <body>
     <div class="color-picker"></div>
-    <div class="change" id="change"></div>
+    
     <div class="top">
-        <p class="line1">Hey I'm</p></n>
-        <p class="line2">Aman</p></n>
+        <p class="line1" id="line1">Hey I'm</p></n>
+        <p class="line2" id="line2">Aman</p></n>
         <p class="line3">21 y/o product designer from sf</p>
     </div>
     <div class="scroll">
-        <a href="#"><p>See Work</p></a>
-        <div class="line"></div>
+        <a href="#"><p id="scroll">See Work</p></a>
+        <div class="line" id="line"></div>
     </div>
     <div class="content">
-        <div class="card">
+        <div class="card" id="card1">
             <img src="assets/messenger.png" class="logo">
             <div class="text">
                 <p class="title"><span class="fb">Facebook</span> Messenger</p>
@@ -32,7 +32,7 @@
                 <p class="link"><a href="#" class="link">Read on Medium</a></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="card2">
 
         </div>
     </div>
@@ -40,6 +40,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 
     <script>
+
+        line1 = document.getElementById('line1')
+        line2 = document.getElementById('line2')
+        scroll = document.getElementById('scroll')
+        line = document.getElementById('line')
+        card1 = document.getElementById('card1')
+        card2 = document.getElementById('card2')
+
         const pickr = Pickr.create({
         el: '.color-picker',
         theme: 'nano', // or 'monolith', or 'nano'
@@ -69,16 +77,24 @@
                 hsva: false,
                 cmyk: false,
                 input: true,
-                clear: true,
-                save: true
+                clear: false,
+                save: false
             }
         }
     });
 
     pickr.on('change', (color, instance) => {
         
-        console.log('change', color, instance);
+        let c = color.toRGBA();
+        this.line1.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.line2.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.scroll.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.scroll.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.line.style.backgroundColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.card1.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.card2.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
     });
+
     </script>
 
 
