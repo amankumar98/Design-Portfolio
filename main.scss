@@ -13,20 +13,28 @@
     justify-content: left;
     align-items: left;
 
+    .picker{
+        display: flex;
+        align-self: flex-end;
+    }
+
     .line1 {
         font-family: Bungee;
-        font-size: 6em;
+        font-size: 6vw;
         color: #009ACB;
+        line-height: 0;
     }
     .line2 {
         font-family: Bungee Shade;
-        font-size: 13em;
+        font-size: 14vw;
         color: #009ACB;
+        line-height: 1.5;
     }
     .line3 {
         font-family: Bungee Hairline;
-        font-size: 2em;
+        font-size: 2.5vw;
         color: #707070;
+        line-height: 0;
     }
 
 }

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="color-picker"></div>
     
     <div class="top">
+        <div class="picker"><div class="color-picker"></div></div>
         <p class="line1" id="line1">Hey I'm</p></n>
         <p class="line2" id="line2">Aman</p></n>
         <p class="line3">21 y/o product designer from sf</p>
@@ -35,6 +35,9 @@
         <div class="card" id="card2">
 
         </div>
+        <div class="card" id="card3">
+
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
@@ -47,6 +50,7 @@
         line = document.getElementById('line')
         card1 = document.getElementById('card1')
         card2 = document.getElementById('card2')
+        card3 = document.getElementById('card3')
 
         const pickr = Pickr.create({
         el: '.color-picker',
@@ -93,6 +97,7 @@
         this.line.style.backgroundColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.card1.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.card2.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.card3.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
     });
 
     </script>
