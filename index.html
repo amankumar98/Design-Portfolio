@@ -40,9 +40,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 
     <script>
-
-        let change = document.getElementById('change')
-
         const pickr = Pickr.create({
         el: '.color-picker',
         theme: 'nano', // or 'monolith', or 'nano'
@@ -61,7 +58,7 @@
 
             // Main components
             preview: true,
-            opacity: false,
+            opacity: true,
             hue: true,
 
             // Input / output Options
@@ -79,10 +76,11 @@
     });
 
     pickr.on('change', (color, instance) => {
-        let colour = args[color].toRGBA(); 
-        this.change.style.backgroundColor = `rgba(${color[0]},${color[1]},${color[2]},${color[3]})`;
+        
+        console.log('change', color, instance);
     });
-
     </script>
+
+
 </body>
 </html>

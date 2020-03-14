@@ -5,7 +5,7 @@
 
 .change {
   height: 10vh;
-  width: 10vh;
+  width: 100vh;
   background-color: black;
 }
 
@@ -31,7 +31,7 @@
 .top .line1 {
   font-family: Bungee;
   font-size: 6em;
-  color: #007EA6;
+  color: #009ACB;
 }
 
 .top .line2 {
