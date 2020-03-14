@@ -17,7 +17,7 @@
         <p class="line3">21 y/o product designer from sf</p>
     </div>
     <div class="scroll">
-        <a href="#"><p id="scroll">See Work</p></a>
+        <a href="#card1"><p id="scroll">See Work</p></a>
         <div class="line" id="line"></div>
     </div>
     <div class="content">
@@ -29,14 +29,30 @@
                 <br>
                 <p class="details">Built a solution to optimize and improve the user experience for file sharing on messenger.</p>
                 <br>
-                <p class="link"><a href="#" class="link">Read on Medium</a></p>
+                <p class="link"><a href="https://medium.com/@amankumar98/intropdp-exercise-aman-kumar-b39c7553f599" class="link" id="link1">Read on Medium</a></p>
             </div>
         </div>
         <div class="card" id="card2">
-
+            <img src="assets/swd.png" class="logo">
+            <div class="text">
+                <p class="title">Students Who Design</p>
+                <p class="type">Online Product Design School</p>
+                <br>
+                <p class="details">Learned Product Design, Research, Prototyping, User Testing and Visual Design over the course of 3 intense weeks from industry expers.</p>
+                <br>
+                <p class="link"><a href="https://www.studentswho.design/" class="link" id="link2">Website</a></p>
+            </div>
         </div>
         <div class="card" id="card3">
-
+            <img src="assets/sfhacks.png" class="logo">
+            <div class="text">
+                <p class="title">SF Hacks - Design Lead</p>
+                <p class="type">Hackathon</p>
+                <br>
+                <p class="details">Cofounding the design club at San Francisco State University and hosting the first collegiate hackathon in SF.</p>
+                <br>
+                <p class="link"><a href="https://medium.com/@amankumar98/building-an-inclusive-design-community-95581115a76b" class="link" id="link3">Read on Medium</a></p>
+            </div>
         </div>
     </div>
 
@@ -51,10 +67,15 @@
         card1 = document.getElementById('card1')
         card2 = document.getElementById('card2')
         card3 = document.getElementById('card3')
+        link1 = document.getElementById('link1')
+        link2 = document.getElementById('link2')
+        link3 = document.getElementById('link3')
 
         const pickr = Pickr.create({
         el: '.color-picker',
         theme: 'nano', // or 'monolith', or 'nano'
+        default: '#009ACB',
+        position: 'right-middle',
 
         swatches: [
             'rgba(244, 67, 54, 1)',
@@ -82,7 +103,7 @@
                 cmyk: false,
                 input: true,
                 clear: false,
-                save: false
+                save: true
             }
         }
     });
@@ -98,6 +119,10 @@
         this.card1.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.card2.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.card3.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.link1.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.link2.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.link3.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+
     });
 
     </script>

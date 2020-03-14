@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -112,9 +113,6 @@
                 color: black;
             }
 
-            .details{
-
-            }
 
             .link{
                 text-decoration: none;
