@@ -136,7 +136,7 @@
     }
     .top {
         padding: 1em;
-        height: 80vh;
+        height: 65vh;
         width: 90vw;
         justify-content: center;
 
@@ -156,6 +156,10 @@
         .line {
             width: 1vw;
         }
+
+        p{
+            border-width: 0.1em;
+        }
     }
 
     .content {
@@ -164,6 +168,7 @@
             width: 90vw;
             height: 60vh;
             margin-left: 0;
+            border-width: 0.2em;
 
             .text {
                 padding: 1em;
