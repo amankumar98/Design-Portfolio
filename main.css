@@ -49,7 +49,7 @@
   font-family: Bungee Hairline;
   font-size: 2.5vw;
   color: #707070;
-  line-height: 0;
+  line-height: 1;
 }
 
 .scroll {
@@ -152,5 +152,45 @@
   text-decoration: none;
   color: #009ACB;
   font-size: 0.93em;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top {
+    padding: 1em;
+    height: 80vh;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top .line1 {
+    font-size: 12vw;
+  }
+  .top .line2 {
+    font-size: 25vw;
+  }
+  .top .line3 {
+    font-size: 6vw;
+  }
+  .content .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
