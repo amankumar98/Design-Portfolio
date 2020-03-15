@@ -190,7 +190,7 @@
     width: 1vw;
   }
   .scroll p {
-    border-width: 0.2em;
+    border-width: 0.15em;
   }
   .content .card {
     -webkit-box-orient: vertical;
@@ -198,9 +198,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 90vw;
-    height: 60vh;
+    height: 65vh;
     margin-left: 0;
-    border-width: 0.3em;
+    border-width: 0.2em;
   }
   .content .card .text {
     padding: 1em;
