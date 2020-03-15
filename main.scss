@@ -137,7 +137,7 @@
     .top {
         padding: 1em;
         height: 80vh;
-        width: 100vw;
+        width: 90vw;
         justify-content: center;
 
         .line1 {
@@ -152,9 +152,22 @@
 
     }
 
+    .scroll {
+        .line {
+            width: 1vw;
+        }
+    }
+
     .content {
         .card {
             flex-direction: column;
+            width: 90vw;
+            height: 60vh;
+            margin-left: 0;
+
+            .text {
+                padding: 1em;
+            }
         }
     }
 

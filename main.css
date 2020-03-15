@@ -172,7 +172,7 @@
   .top {
     padding: 1em;
     height: 80vh;
-    width: 100vw;
+    width: 90vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -186,11 +186,20 @@
   .top .line3 {
     font-size: 6vw;
   }
+  .scroll .line {
+    width: 1vw;
+  }
   .content .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 90vw;
+    height: 60vh;
+    margin-left: 0;
+  }
+  .content .card .text {
+    padding: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
