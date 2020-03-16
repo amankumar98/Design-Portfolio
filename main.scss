@@ -38,6 +38,23 @@
         line-height: 1;
     }
 
+    .social{
+        margin-top: 1em;
+        display: flex;
+        .icon{
+            padding: 0.3em;
+            fill: #009ACB;
+            height: 2.5em;
+            width: 2.5em;
+        }
+        .icon2{
+            padding: 0.3em;
+            fill: #009ACB;
+            height: 2.7em;
+            width: 2.7em;
+        }
+    }
+
 }
 
 .scroll{
@@ -158,7 +175,7 @@
         }
 
         p{
-            border-width: 0.15em;
+            border-width: 0.1em;
         }
     }
 
