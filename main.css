@@ -4,6 +4,30 @@
   scroll-behavior: smooth;
 }
 
+html[data-theme='dark'] {
+  background-color: #0f0f0f;
+}
+
+html[data-theme='dark'] .top .line3 {
+  color: white;
+}
+
+html[data-theme='dark'] .top .options .moon {
+  fill: white;
+}
+
+html[data-theme='dark'] .content .card .text {
+  color: white;
+}
+
+html[data-theme='dark'] .content .card .text .type {
+  color: #cacaca;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
 .top {
   padding: 5em 15em;
   height: 60vh;
@@ -23,12 +47,20 @@
           align-items: left;
 }
 
-.top .picker {
+.top .options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.top .options .moon {
+  fill: #0f0f0f;
+  height: 1.4em;
+  width: 1.4em;
+  padding-left: 0.5em;
+  cursor: pointer;
 }
 
 .top .line1 {
@@ -73,6 +105,21 @@
   width: 2.7em;
 }
 
+.top .resume p {
+  font-family: Bungee;
+  border-color: #009ACB;
+  border-style: solid;
+  font-size: 2em;
+  text-align: center;
+  line-height: 130%;
+  width: 6em;
+  color: #009ACB;
+}
+
+.top .resume a {
+  text-decoration: none;
+}
+
 .scroll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +141,6 @@
 }
 
 .scroll p {
-  background-color: white;
   color: #009ACB;
   font-family: Bungee;
   border-color: #009ACB;
@@ -135,7 +181,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
   height: 30vh;
   width: 50vw;
   margin-left: 1.4em;
@@ -226,5 +271,15 @@
   .content .card .text {
     padding: 1em;
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

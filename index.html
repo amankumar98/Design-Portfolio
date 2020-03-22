@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,13 @@
 <body>
     
     <div class="top">
-        <div class="picker"><div class="color-picker"></div></div>
+        <div class="options">
+            <div class="color-picker"></div>
+            <input type="checkbox" name="theme" id="cb">
+            <label for="cb">
+                <svg class="moon" viewBox="-12 0 448 448.04455" xmlns="http://www.w3.org/2000/svg"><path d="m224.023438 448.03125c85.714843.902344 164.011718-48.488281 200.117187-126.230469-22.722656 9.914063-47.332031 14.769531-72.117187 14.230469-97.15625-.109375-175.890626-78.84375-176-176 .972656-65.71875 37.234374-125.832031 94.910156-157.351562-15.554688-1.980469-31.230469-2.867188-46.910156-2.648438-123.714844 0-224.0000005 100.289062-224.0000005 224 0 123.714844 100.2851565 224 224.0000005 224zm0 0"/></svg>
+            </label>
+        </div>
         <p class="line1" id="line1">Hey I'm</p></n>
         <p class="line2" id="line2">Aman</p></n>
         <p class="line3">21 y/o product designer from sf</p>
@@ -22,9 +28,10 @@
             <a href="https://www.linkedin.com/in/aman-kumar-1469b8131/" target="_blank"><svg class="icon" id="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
             <a href="https://medium.com/@amankumar98" target="_blank"><svg class="icon" id="icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg></a>
             <a href="mailto:amankumar@mail.sfsu.edu"><svg class="icon2" id="icon4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg></a>
-            <a href="assets/Resume.pdf" target="_blank"><svg class="icon2" id="icon5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-10 13.597v.403h-10v-.417c-.004-1.112.044-1.747 1.324-2.043 1.403-.324 2.787-.613 2.122-1.841-1.973-3.637-.563-5.699 1.554-5.699 2.077 0 3.521 1.985 1.556 5.699-.647 1.22.688 1.51 2.121 1.841 1.284.297 1.328.936 1.323 2.057zm6-9.597h-4v2h4v-2zm0 4h-4v2h4v-2zm0 4h-4v2h4v-2z"/></svg></a>
-            
+            <!-- <a href="assets/Resume.pdf" target="_blank"><svg class="icon2" id="icon5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-10 13.597v.403h-10v-.417c-.004-1.112.044-1.747 1.324-2.043 1.403-.324 2.787-.613 2.122-1.841-1.973-3.637-.563-5.699 1.554-5.699 2.077 0 3.521 1.985 1.556 5.699-.647 1.22.688 1.51 2.121 1.841 1.284.297 1.328.936 1.323 2.057zm6-9.597h-4v2h4v-2zm0 4h-4v2h4v-2zm0 4h-4v2h4v-2z"/></svg></a>
+            <a href="assets/Resume.pdf" target="_blank"><svg class="icon" id="icon5" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 0V100H87V23.8095H65.5161C64.1978 23.8094 63.1292 22.7435 63.129 21.4286V0H13ZM67.9032 0V19.0476H87L67.9032 0ZM36.871 11.9048C40.1669 11.9048 42.8387 14.5698 42.8387 17.8571C42.8387 21.1445 40.1669 23.8095 36.871 23.8095C33.5751 23.8095 30.9032 21.1445 30.9032 17.8571C30.9032 14.5698 33.5751 11.9048 36.871 11.9048ZM36.871 28.5714C44.1219 28.5714 50 33.9014 50 40.4762H23.7419C23.7419 33.9014 29.6201 28.5714 36.871 28.5714ZM23.4063 51.1905C23.4435 51.1896 23.4809 51.1896 23.5181 51.1905C23.5927 51.187 23.6674 51.187 23.7419 51.1905H76.2581C77.1189 51.1783 77.9197 51.6295 78.3537 52.3711C78.7877 53.1128 78.7877 54.0301 78.3537 54.7717C77.9197 55.5134 77.1189 55.9645 76.2581 55.9524H23.7419C22.4236 56.0448 21.2797 55.0538 21.187 53.7388C21.0943 52.4239 22.0879 51.2829 23.4063 51.1905ZM23.4063 64.2857C23.4435 64.2848 23.4809 64.2848 23.5181 64.2857C23.5927 64.2822 23.6674 64.2822 23.7419 64.2857H76.2581C77.1189 64.2736 77.9197 64.7247 78.3537 65.4664C78.7877 66.208 78.7877 67.1253 78.3537 67.867C77.9197 68.6086 77.1189 69.0598 76.2581 69.0476H23.7419C22.4236 69.1401 21.2797 68.149 21.187 66.8341C21.0943 65.5191 22.0879 64.3782 23.4063 64.2857ZM23.4063 77.3809C23.4435 77.3801 23.4809 77.3801 23.5181 77.3809C23.5927 77.3775 23.6674 77.3775 23.7419 77.3809H76.2581C77.1189 77.3688 77.9197 77.8199 78.3537 78.5616C78.7877 79.3033 78.7877 80.2205 78.3537 80.9622C77.9197 81.7039 77.1189 82.155 76.2581 82.1428H23.7419C22.4236 82.2353 21.2797 81.2443 21.187 79.9293C21.0943 78.6143 22.0879 77.4734 23.4063 77.3809Z"/></svg></a> -->
         </div>
+        <div class="resume"><a href="assets/Resume.pdf" target="_blank"><p id="resume">Resume</p></a></div>
     </div>
     <div class="scroll">
         <a href="#card1"><p id="scroll">See Work</p></a>
@@ -84,22 +91,24 @@
         icon2 = document.getElementById('icon2')
         icon3 = document.getElementById('icon3')
         icon4 = document.getElementById('icon4')
-        icon5 = document.getElementById('icon5')
+        resume = document.getElementById('resume')
 
         const pickr = Pickr.create({
         el: '.color-picker',
         theme: 'nano', // or 'monolith', or 'nano'
         default: '#009ACB',
         position: 'right-middle',
+        closeOnScroll: true,
+        comparison: false,
 
         swatches: [
             'rgba(244, 67, 54, 1)',
-            'rgba(233, 30, 99, 1)',
-            'rgba(156, 39, 176, 1)',
-            'rgba(103, 58, 183, 1)',
-            'rgba(63, 81, 181, 1)',
-            'rgba(33, 150, 243, 1)',
-            'rgba(3, 169, 244, 1)'
+            'rgba(231, 203, 65, 1)',
+            'rgba(45, 180, 0, 1)',
+            'rgba(6, 255, 253, 1)',
+            'rgba(0, 154, 203, 1)',
+            'rgba(164, 113, 255, 1)',
+            'rgba(213, 57, 189, 1)'
         ],
 
         components: {
@@ -116,9 +125,9 @@
                 hsla: false,
                 hsva: false,
                 cmyk: false,
-                input: true,
+                input: false,
                 clear: false,
-                save: true
+                save: false
             }
         }
     });
@@ -141,12 +150,32 @@
         this.icon2.style.fill = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.icon3.style.fill = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
         this.icon4.style.fill = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
-        this.icon5.style.fill = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.resume.style.color = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
+        this.resume.style.borderColor = `rgba(${c[0]},${c[1]},${c[2]},${c[3]})`;
 
     });
 
     </script>
+    <script>
+        var checkbox = document.querySelector('input[name=theme]');
 
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        })
+
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        }
+    </script>
 
 </body>
 </html>
