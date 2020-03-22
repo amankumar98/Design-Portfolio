@@ -24,6 +24,10 @@ html[data-theme='dark'] .content .card .text .type {
   color: #cacaca;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
 .top {
   padding: 5em 15em;
   height: 60vh;
@@ -56,6 +60,7 @@ html[data-theme='dark'] .content .card .text .type {
   height: 1.4em;
   width: 1.4em;
   padding-left: 0.5em;
+  cursor: pointer;
 }
 
 .top .line1 {
@@ -266,5 +271,15 @@ html[data-theme='dark'] .content .card .text .type {
   .content .card .text {
     padding: 1em;
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

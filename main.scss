@@ -32,6 +32,9 @@ html[data-theme='dark'] {
 
 }
 
+input[type=checkbox] {
+    display: none;
+}
 
 .top {
     padding: 5em 15em;
@@ -51,6 +54,7 @@ html[data-theme='dark'] {
             height: 1.4em;
             width: 1.4em;
             padding-left: 0.5em;
+            cursor: pointer;
         }
     }
 
@@ -245,3 +249,11 @@ html[data-theme='dark'] {
     }
 
   }
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
