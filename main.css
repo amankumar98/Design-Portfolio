@@ -105,6 +105,10 @@ input[type=checkbox] {
   width: 2.7em;
 }
 
+.top .resume {
+  width: 2em;
+}
+
 .top .resume p {
   font-family: Bungee;
   border-color: #009ACB;
